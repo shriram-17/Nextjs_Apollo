@@ -1,0 +1,15 @@
+type File {
+    id: Int!
+    filename: String!
+    size: Int!
+    type: String!
+    content: String
+}
+
+type Query {
+    getFileById(id: Int!): File
+}
+
+type Mutation {
+    uploadFile(filename: String!, size: Int!, type: String!, content: String!): File
+}
