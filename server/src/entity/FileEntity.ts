@@ -15,5 +15,5 @@ export class FileEntity {
     type!: string;
 
     @Column({ type: 'bytea', nullable: true })
-    content!: Buffer;
+    content!: string;
 }

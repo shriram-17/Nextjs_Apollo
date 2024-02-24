@@ -14,7 +14,7 @@ AppDataSource.initialize()
 
 
 
-const server : ApolloServer<BaseContext> = new ApolloServer({
+const server: ApolloServer<BaseContext> = new ApolloServer({
     typeDefs,
     resolvers
 });

@@ -3,11 +3,12 @@ type File {
     filename: String!
     size: Int!
     type: String!
-    content: String
+    content: String!
 }
 
 type Query {
-    getFileById(id: Int!): File
+    getFiles: [File!]!
+    getFileByFileName(fileName: String!): File
 }
 
 type Mutation {
